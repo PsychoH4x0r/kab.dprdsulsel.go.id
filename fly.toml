@@ -1,16 +1,17 @@
-# fly.toml app configuration file generated for kab-dprdsulsel-go-id on 2026-11-09T05:07:53Z
+# fly.toml app configuration file generated for kab-dprdsulsel-go-id on 2026-11-09T05:27:54Z
 #
-# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+# See https://docs.fly.io/reference/configuration for information about how to use this file.
 #
 
 app = 'kab-dprdsulsel-go-id'
 primary_region = 'ams'
 
 [build]
+
 [http_service]
   internal_port = 8080
   force_https = true
-  auto_stop_machines = 'stop'
+  auto_stop_machines = 'off'
   auto_start_machines = true
   min_machines_running = 0
   processes = ['app']
